@@ -14,7 +14,7 @@ packages = [
 ]
 version = "0.0.0"
 description = "A collection of fields and utilities to help make model fields more strict."
-authors = ["Jyve Engineering"]
+authors = ["Tomas Arni Jonasson"]
 classifiers = [
   "Intended Audience :: Developers",
   "Operating System :: OS Independent",
@@ -54,6 +54,7 @@ pytest-cov = "=2.10.0"
 pytest-django = "^3.8.0"
 pytest-dotenv = "^0.4.0"
 python-magic = "=0.4.15"
+pytest-mock = "^3.1.0"
 requests = "^2.22.0"
 Sphinx = "=3.0.3"
 sphinx-rtd-theme = "=0.4.3"
