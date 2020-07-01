@@ -1,0 +1,8 @@
+_extensions:
+- jinja2_time.TimeExtension
+_template: git@github.com:jyveapp/public-django-app-template.git
+_version: 51c0c983206e8312a2fabbfd3dff72449d43c94c
+module_name: strict_fields
+repo_name: django-strict-fields
+short_description: A collection of fields and utilities to help make model fields
+  more strict.
