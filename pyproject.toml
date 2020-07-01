@@ -12,7 +12,7 @@ name = "django-strict-fields"
 packages = [
   { include = "strict_fields" }
 ]
-version = "0.0.0"
+version = "1.0.0"
 description = "A collection of fields and utilities to help make model fields more strict."
 authors = ["Tomas Arni Jonasson"]
 classifiers = [
