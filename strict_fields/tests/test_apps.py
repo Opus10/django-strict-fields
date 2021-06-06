@@ -32,7 +32,8 @@ def test_app_ready_monkey_patch_individual(
 ):
 
     mock_monkey_patch_function = mocker.patch(
-        f'strict_fields.apps.{monkey_patch_function}', autospec=True,
+        f'strict_fields.apps.{monkey_patch_function}',
+        autospec=True,
     )
 
     setattr(settings, settings_parameter, enabled)
@@ -54,15 +55,15 @@ def test_app_ready_monkey_patch_all(mocker, settings, enabled):
 
     mocks = [
         mocker.patch(
-            f'strict_fields.apps.monkey_patch_djangos_charfield',
+            'strict_fields.apps.monkey_patch_djangos_charfield',
             autospec=True,
         ),
         mocker.patch(
-            f'strict_fields.apps.monkey_patch_djangos_textfield',
+            'strict_fields.apps.monkey_patch_djangos_textfield',
             autospec=True,
         ),
         mocker.patch(
-            f'strict_fields.apps.monkey_patch_djangos_datetimefield',
+            'strict_fields.apps.monkey_patch_djangos_datetimefield',
             autospec=True,
         ),
     ]

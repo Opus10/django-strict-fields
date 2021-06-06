@@ -10,7 +10,7 @@ Setup
 
 Set up your development environment with::
 
-    git clone git@github.com:jyveapp/django-strict-fields.git
+    git clone git@github.com:Opus10/django-strict-fields.git
     cd django-strict-fields
     make setup
 
