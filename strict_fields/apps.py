@@ -81,9 +81,7 @@ class StrictFieldsConfig(AppConfig):
         if getattr(settings, 'STRICT_FIELDS_HARDEN_DJANGOS_TEXTFIELD', False):
             monkey_patches.add(monkey_patch_djangos_textfield)
 
-        if getattr(
-            settings, 'STRICT_FIELDS_HARDEN_DJANGOS_DATETIMEFIELD', False
-        ):
+        if getattr(settings, 'STRICT_FIELDS_HARDEN_DJANGOS_DATETIMEFIELD', False):
             monkey_patches.add(monkey_patch_djangos_datetimefield)
 
         if getattr(settings, 'STRICT_FIELDS_HARDEN_DJANGOS_FIELDS', False):

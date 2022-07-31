@@ -49,9 +49,7 @@ def test_datetimefield_db_type(mocker, settings, use_tz, expected_type):
         ),
         (False, END_OF_2019_NAIVE),
         # TZ-aware cases:
-        pytest.param(
-            True, END_OF_2019_NAIVE, marks=pytest.mark.xfail(raises=ValueError)
-        ),
+        pytest.param(True, END_OF_2019_NAIVE, marks=pytest.mark.xfail(raises=ValueError)),
         (True, END_OF_2019_AWARE),
         # blank value
         (False, None),
@@ -79,9 +77,7 @@ def test_datetimefield_from_db_value(mocker, settings, use_tz, value):
         (False, None),
         (False, END_OF_2019_NAIVE),
         # TZ-aware cases:
-        pytest.param(
-            True, END_OF_2019_NAIVE, marks=pytest.mark.xfail(raises=ValueError)
-        ),
+        pytest.param(True, END_OF_2019_NAIVE, marks=pytest.mark.xfail(raises=ValueError)),
         (True, None),
         (True, END_OF_2019_AWARE),
     ],

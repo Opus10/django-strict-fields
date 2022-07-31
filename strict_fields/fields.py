@@ -54,9 +54,7 @@ def get_datetime_validator():
     elif settings.USE_TZ is True:
         return helpers.ensure_tz_aware_datetime
     else:
-        raise RuntimeError(
-            '`settings.USE_TZ` must be either `True` or `False`'
-        )
+        raise RuntimeError('`settings.USE_TZ` must be either `True` or `False`')
 
 
 class DateTimeField(models.DateTimeField):

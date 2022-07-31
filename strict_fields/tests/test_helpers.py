@@ -31,16 +31,12 @@ def test_ensure_datetime_is_datetime():
     'value',
     (
         pytest.param(None, marks=pytest.mark.xfail(raises=ValueError)),
-        pytest.param(
-            LAST_DAY_OF_2019, marks=pytest.mark.xfail(raises=ValueError)
-        ),
+        pytest.param(LAST_DAY_OF_2019, marks=pytest.mark.xfail(raises=ValueError)),
         pytest.param(
             END_OF_2019_NAIVE_ISOFORMATTED,
             marks=pytest.mark.xfail(raises=ValueError),
         ),
-        pytest.param(
-            END_OF_2019_AWARE, marks=pytest.mark.xfail(raises=ValueError)
-        ),
+        pytest.param(END_OF_2019_AWARE, marks=pytest.mark.xfail(raises=ValueError)),
         END_OF_2019_NAIVE,
     ),
 )
@@ -52,16 +48,12 @@ def test_ensure_tz_naive_datetime(value):
     'value',
     (
         pytest.param(None, marks=pytest.mark.xfail(raises=ValueError)),
-        pytest.param(
-            LAST_DAY_OF_2019, marks=pytest.mark.xfail(raises=ValueError)
-        ),
+        pytest.param(LAST_DAY_OF_2019, marks=pytest.mark.xfail(raises=ValueError)),
         pytest.param(
             END_OF_2019_NAIVE_ISOFORMATTED,
             marks=pytest.mark.xfail(raises=ValueError),
         ),
-        pytest.param(
-            END_OF_2019_NAIVE, marks=pytest.mark.xfail(raises=ValueError)
-        ),
+        pytest.param(END_OF_2019_NAIVE, marks=pytest.mark.xfail(raises=ValueError)),
         END_OF_2019_AWARE,
     ),
 )

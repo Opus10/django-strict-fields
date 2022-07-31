@@ -33,7 +33,5 @@ class MadeupTz(tzinfo):
 
 END_OF_2019_NAIVE = datetime(2019, 12, 31, 12, 34, 56, 123456)
 END_OF_2019_NAIVE_ISOFORMATTED = END_OF_2019_NAIVE.isoformat()
-END_OF_2019_AWARE = datetime(
-    2019, 12, 31, 12, 34, 56, 123456, tzinfo=MadeupTz()
-)
+END_OF_2019_AWARE = datetime(2019, 12, 31, 12, 34, 56, 123456, tzinfo=MadeupTz())
 LAST_DAY_OF_2019 = date(2019, 12, 31)
