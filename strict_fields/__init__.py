@@ -1,8 +1,16 @@
 # Importing fields so they can be imported directly from library.
 # E.g.:
 #     from strict_fields import CharField
-from .fields import CharField  # noqa
-from .fields import DateTimeField  # noqa
-from .fields import TextField  # noqa
+import django
 
-default_app_config = 'strict_fields.apps.StrictFieldsConfig'
+from strict_fields.fields import CharField
+from strict_fields.fields import DateTimeField
+from strict_fields.fields import TextField
+from strict_fields.version import __version__
+
+__all__ = ['CharField', 'DateTimeField', 'TextField', '__version__']
+
+if django.VERSION < (3, 2):
+    default_app_config = 'strict_fields.apps.StrictFieldsConfig'
+
+del django

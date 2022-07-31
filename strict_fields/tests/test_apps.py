@@ -96,9 +96,7 @@ def test_app_ready_monkey_patch_all(mocker, settings, enabled):
         (True, END_OF_2019_NAIVE, None, pytest.raises(ValueError)),
     ],
 )
-def test_monkey_patch_djangos_datetimefield(
-    settings, use_tz, value, expected, expected_exception
-):
+def test_monkey_patch_djangos_datetimefield(settings, use_tz, value, expected, expected_exception):
     settings.USE_TZ = use_tz
     apps.monkey_patch_djangos_datetimefield()
     with expected_exception:
