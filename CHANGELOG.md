@@ -1,4 +1,8 @@
 # Changelog
+## 1.0.4 (2022-08-20)
+### Trivial
+  - Updated with latest Django template [Wes Kendall, fda30c9]
+
 ## 1.0.3 (2022-08-20)
 ### Trivial
   - Fix release note rendering and code formatting changes [Wes Kendall, 592722b]
