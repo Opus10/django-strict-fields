@@ -8,9 +8,9 @@ from strict_fields.fields import DateTimeField
 from strict_fields.fields import TextField
 from strict_fields.version import __version__
 
-__all__ = ['CharField', 'DateTimeField', 'TextField', '__version__']
+__all__ = ["CharField", "DateTimeField", "TextField", "__version__"]
 
 if django.VERSION < (3, 2):
-    default_app_config = 'strict_fields.apps.StrictFieldsConfig'
+    default_app_config = "strict_fields.apps.StrictFieldsConfig"
 
 del django

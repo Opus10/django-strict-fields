@@ -18,16 +18,16 @@ def is_naive(datetime_or_time):
 
 def ensure_datetime(value):
     if not isinstance(value, datetime.datetime):
-        raise ValueError(f'{value!r} should be a datetime')
+        raise ValueError(f"{value!r} should be a datetime")
 
 
 def ensure_tz_naive_datetime(value):
     ensure_datetime(value)
     if not is_naive(value):
-        raise ValueError(f'This should NOT be tz-aware: {value!r}')
+        raise ValueError(f"This should NOT be tz-aware: {value!r}")
 
 
 def ensure_tz_aware_datetime(value):
     ensure_datetime(value)
     if is_naive(value):
-        raise ValueError(f'This should be tz-aware: {value!r}')
+        raise ValueError(f"This should be tz-aware: {value!r}")

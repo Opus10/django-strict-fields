@@ -54,7 +54,7 @@ def get_datetime_validator():
     elif settings.USE_TZ is True:
         return helpers.ensure_tz_aware_datetime
     else:
-        raise RuntimeError('`settings.USE_TZ` must be either `True` or `False`')
+        raise RuntimeError("`settings.USE_TZ` must be either `True` or `False`")
 
 
 class DateTimeField(models.DateTimeField):
@@ -68,9 +68,9 @@ class DateTimeField(models.DateTimeField):
 
     def db_type(self, connection):
         if settings.USE_TZ is False:
-            return 'timestamp'
+            return "timestamp"
         else:
-            return 'timestamp with time zone'
+            return "timestamp with time zone"
 
     def from_db_value(self, value, expression, connection):
         if value is None:

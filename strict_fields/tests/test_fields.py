@@ -6,30 +6,30 @@ from .common import END_OF_2019_AWARE
 from .common import END_OF_2019_NAIVE
 
 
-@pytest.mark.parametrize('model_name', [('CharField'), ('TextField')])
+@pytest.mark.parametrize("model_name", [("CharField"), ("TextField")])
 def test_original_fields_get_default(model_name):
     # NOTE: Including this here to showcase the problem with the default
     # behavior of Django's CharField - useful as a reference to the test(s)
     # below.
     field = getattr(models, model_name)()
-    assert field.get_default() == ''
+    assert field.get_default() == ""
 
 
-@pytest.mark.parametrize('model_name', [('CharField'), ('TextField')])
+@pytest.mark.parametrize("model_name", [("CharField"), ("TextField")])
 def test_strict_fields_get_default(model_name):
     field = getattr(strict_fields, model_name)()
     assert field.get_default() is None
 
 
 def test_datetimefield_invalid_use_tz(settings):
-    settings.USE_TZ = 'Neither `True` nor `False`'
+    settings.USE_TZ = "Neither `True` nor `False`"
     with pytest.raises(RuntimeError):
         strict_fields.DateTimeField()
 
 
 @pytest.mark.parametrize(
-    'use_tz, expected_type',
-    ((False, 'timestamp'), (True, 'timestamp with time zone')),
+    "use_tz, expected_type",
+    ((False, "timestamp"), (True, "timestamp with time zone")),
 )
 def test_datetimefield_db_type(mocker, settings, use_tz, expected_type):
     settings.USE_TZ = use_tz
@@ -39,7 +39,7 @@ def test_datetimefield_db_type(mocker, settings, use_tz, expected_type):
 
 
 @pytest.mark.parametrize(
-    'use_tz, value',
+    "use_tz, value",
     [
         # use_tz cases:
         pytest.param(
@@ -66,7 +66,7 @@ def test_datetimefield_from_db_value(mocker, settings, use_tz, value):
 
 
 @pytest.mark.parametrize(
-    'use_tz, value',
+    "use_tz, value",
     [
         # use_tz cases:
         pytest.param(
