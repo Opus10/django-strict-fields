@@ -67,7 +67,7 @@ def disable_monkey_patch_djangos_datetimefield():
 
 
 class StrictFieldsConfig(AppConfig):
-    name = 'strict_fields'
+    name = "strict_fields"
 
     def ready(self):
 
@@ -75,16 +75,16 @@ class StrictFieldsConfig(AppConfig):
 
         monkey_patches = set()
 
-        if getattr(settings, 'STRICT_FIELDS_HARDEN_DJANGOS_CHARFIELD', False):
+        if getattr(settings, "STRICT_FIELDS_HARDEN_DJANGOS_CHARFIELD", False):
             monkey_patches.add(monkey_patch_djangos_charfield)
 
-        if getattr(settings, 'STRICT_FIELDS_HARDEN_DJANGOS_TEXTFIELD', False):
+        if getattr(settings, "STRICT_FIELDS_HARDEN_DJANGOS_TEXTFIELD", False):
             monkey_patches.add(monkey_patch_djangos_textfield)
 
-        if getattr(settings, 'STRICT_FIELDS_HARDEN_DJANGOS_DATETIMEFIELD', False):
+        if getattr(settings, "STRICT_FIELDS_HARDEN_DJANGOS_DATETIMEFIELD", False):
             monkey_patches.add(monkey_patch_djangos_datetimefield)
 
-        if getattr(settings, 'STRICT_FIELDS_HARDEN_DJANGOS_FIELDS', False):
+        if getattr(settings, "STRICT_FIELDS_HARDEN_DJANGOS_FIELDS", False):
             monkey_patches.add(monkey_patch_djangos_charfield)
             monkey_patches.add(monkey_patch_djangos_textfield)
             monkey_patches.add(monkey_patch_djangos_datetimefield)
