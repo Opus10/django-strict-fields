@@ -1,4 +1,8 @@
 # Changelog
+## 1.0.5 (2022-08-24)
+### Trivial
+  - Fix ReadTheDocs builds [Wes Kendall, 1a965ac]
+
 ## 1.0.4 (2022-08-20)
 ### Trivial
   - Updated with latest Django template [Wes Kendall, fda30c9]
