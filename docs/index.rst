@@ -168,3 +168,8 @@ This parameter is inspected when Django is launched and the fields are monkey-pa
 *NOTE*: This requires that ``'strict_fields'`` be put in ``settings.INSTALLED_APPS``, so that the monkey-patch functions are called on startup of Django.
 
 *NOTE*: Monkey-patching is generally not considered good practice, as it may have unintended consequences. A read-through of :file:`strict_fields/apps.py` is highly recommended.
+
+Compatibility
+-------------
+
+``django-strict-fields`` is compatible with Python 3.7 -- 3.11 and Django 3.2 -- 4.2

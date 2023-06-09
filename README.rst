@@ -4,6 +4,11 @@ django-strict-fields
 This library is meant to help enforce stricter rules around using some of the basic model fields that Django provides.
 View the docs `here <https://django-strict-fields.readthedocs.io/>`_ to get started.
 
+Compatibility
+=============
+
+``django-strict-fields`` is compatible with Python 3.7 - 3.11 and Django 3.2 - 4.2.
+
 Documentation
 =============
 
