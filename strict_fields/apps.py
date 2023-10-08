@@ -70,7 +70,6 @@ class StrictFieldsConfig(AppConfig):
     name = "strict_fields"
 
     def ready(self):
-
         # Execute monkey patching of Django's fields, if enabled
 
         monkey_patches = set()

@@ -1,10 +1,13 @@
 import pytest
 
 from strict_fields import helpers
-from .common import END_OF_2019_AWARE
-from .common import END_OF_2019_NAIVE
-from .common import END_OF_2019_NAIVE_ISOFORMATTED
-from .common import LAST_DAY_OF_2019
+
+from .common import (
+    END_OF_2019_AWARE,
+    END_OF_2019_NAIVE,
+    END_OF_2019_NAIVE_ISOFORMATTED,
+    LAST_DAY_OF_2019,
+)
 
 
 @pytest.mark.parametrize(
