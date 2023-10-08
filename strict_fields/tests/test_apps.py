@@ -1,12 +1,11 @@
 from contextlib import ExitStack as does_not_raise
 
-from django.db import models
 import pytest
+from django.db import models
 
 from strict_fields import apps
-from .common import END_OF_2019_AWARE
-from .common import END_OF_2019_NAIVE
-from .common import LAST_DAY_OF_2019
+
+from .common import END_OF_2019_AWARE, END_OF_2019_NAIVE, LAST_DAY_OF_2019
 
 
 @pytest.mark.parametrize(
@@ -30,7 +29,6 @@ from .common import LAST_DAY_OF_2019
 def test_app_ready_monkey_patch_individual(
     mocker, settings, settings_parameter, enabled, monkey_patch_function
 ):
-
     mock_monkey_patch_function = mocker.patch(
         f"strict_fields.apps.{monkey_patch_function}",
         autospec=True,
@@ -52,7 +50,6 @@ def test_app_ready_monkey_patch_individual(
 
 @pytest.mark.parametrize("enabled", (False, True))
 def test_app_ready_monkey_patch_all(mocker, settings, enabled):
-
     mocks = [
         mocker.patch(
             "strict_fields.apps.monkey_patch_djangos_charfield",

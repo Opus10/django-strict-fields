@@ -3,9 +3,7 @@
 #     from strict_fields import CharField
 import django
 
-from strict_fields.fields import CharField
-from strict_fields.fields import DateTimeField
-from strict_fields.fields import TextField
+from strict_fields.fields import CharField, DateTimeField, TextField
 from strict_fields.version import __version__
 
 __all__ = ["CharField", "DateTimeField", "TextField", "__version__"]

@@ -1,11 +1,7 @@
-from datetime import date
-from datetime import datetime
-from datetime import timedelta
-from datetime import tzinfo
+from datetime import date, datetime, timedelta, tzinfo
 
 
 class MadeupTz(tzinfo):
-
     utc_offset = timedelta(hours=1, minutes=23)
     dst_offset = timedelta(minutes=1)
 

@@ -1,9 +1,9 @@
-from django.db import models
 import pytest
+from django.db import models
 
 import strict_fields
-from .common import END_OF_2019_AWARE
-from .common import END_OF_2019_NAIVE
+
+from .common import END_OF_2019_AWARE, END_OF_2019_NAIVE
 
 
 @pytest.mark.parametrize("model_name", [("CharField"), ("TextField")])
