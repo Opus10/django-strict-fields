@@ -1,7 +1,7 @@
 _extensions:
 - jinja2_time.TimeExtension
 _template: git@github.com:Opus10/public-django-app-template.git
-_version: b87c86b7bcc8785751deb63c34f13175d0c97ce9
+_version: 61fb54bab32508ca0cc5d70a9155f49d124f04c0
 module_name: strict_fields
 repo_name: django-strict-fields
 short_description: A collection of fields and utilities to help make model fields
