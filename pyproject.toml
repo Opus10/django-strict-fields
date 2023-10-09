@@ -29,7 +29,7 @@ packages = [
 exclude = [
   "*/tests/"
 ]
-version = "1.2.0"
+version = "1.2.1"
 description = "A collection of fields and utilities to help make model fields more strict."
 authors = ["Tomas Arni Jonasson"]
 classifiers = [
