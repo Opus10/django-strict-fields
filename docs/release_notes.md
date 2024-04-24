@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.3.3 (2024-04-23)
+
+### Trivial
+
+  - Update with latest Python template. [Wesley Kendall, e3ce25b]
+
 ## 1.3.2 (2024-04-18)
 
 ### Trivial
