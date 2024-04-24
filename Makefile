@@ -144,7 +144,7 @@ full-test-suite:
 # Build documentation
 .PHONY: docs
 docs:
-	$(EXEC_WRAPPER) mkdocs build
+	$(EXEC_WRAPPER) mkdocs build -s
 
 
 # Serve documentation
@@ -158,7 +158,6 @@ docs-serve:
 lint:
 	$(EXEC_WRAPPER) ruff format . --check
 	$(EXEC_WRAPPER) ruff check ${MODULE_NAME}
-	$(EXEC_WRAPPER) footing update --check
 	$(EXEC_WRAPPER) bash -c 'make docs'
 
 
