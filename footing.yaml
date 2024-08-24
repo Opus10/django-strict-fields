@@ -1,0 +1,10 @@
+_extensions:
+- jinja2_time.TimeExtension
+_template: https://github.com/Opus10/python-library-template
+_version: 2794ea47b0220081dc869d01199ee490dda00762
+check_types_in_ci: 'False'
+is_django: 'True'
+module_name: strict_fields
+repo_name: django-strict-fields
+short_description: A collection of fields and utilities to help make model fields
+  more strict.
