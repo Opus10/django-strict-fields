@@ -162,4 +162,4 @@ This parameter is inspected when Django is launched and the fields are monkey-pa
 
 ## Compatibility
 
-`django-strict-fields` is compatible with Python 3.8 - 3.12 and Django 4.2 - 5.1.
+`django-strict-fields` is compatible with Python 3.9 - 3.13 and Django 4.2 - 5.1.

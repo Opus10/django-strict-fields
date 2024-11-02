@@ -4,7 +4,7 @@ This library is meant to help enforce stricter rules around using some of the ba
 
 ## Compatibility
 
-`django-strict-fields` is compatible with Python 3.8 - 3.12 and Django 4.2 - 5.1.
+`django-strict-fields` is compatible with Python 3.9 - 3.13 and Django 4.2 - 5.1.
 
 ## Documentation
 
