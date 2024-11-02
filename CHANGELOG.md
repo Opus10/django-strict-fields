@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.4.0 (2024-11-01)
+
+#### Changes
+
+  - Added Python 3.13 support, dropped Python 3.8. Added Postgres17 support by [@wesleykendall](https://github.com/wesleykendall) in [#19](https://github.com/Opus10/django-strict-fields/pull/19).
+
 ## 1.3.4 (2024-08-24)
 
 #### Changes
